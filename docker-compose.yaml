@@ -1,0 +1,10 @@
+version: '3'
+services:
+  react-discord-clone:
+    container_name: react-discord-clone
+    image: node:20-alpine
+    tty: true
+    volumes:
+      - .:/home/node/app
+    ports:
+      - "3000:3000"
